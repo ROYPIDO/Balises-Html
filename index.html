@@ -9,13 +9,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Nous decouvrons ici les premières balises">
+    <!--On va lier notre fichier CSS de styles a notre page HTML-->
+    <link rel="stylesheet" href="assets/css/main.css">
 
     <title>Les balises HTML</title>
 </head>
 <!--C'est le corps du document, la partie affichée dans le navigateur -->
 <body>
     <!--Je peux écrire ce que je veux-->
-    Hello Wf3
+    <!-- Les types de balises-->
+    <!-- Les balises en paires, par exemple, <h1> qui correspond au titre principal de notre page-->
+        <h1> Julien CAKIR - Developper Web</h1>
+        <!-- Les balises orphelines, comme la balise <img> par exemple-->
+
+        <img src="assets/images/lion_picture_168819.jpg" 
+             alt="Photo de profil de Julien CAKIR" 
+             width="240px"
+             style="border-radius:50%">
+        <!-- Attention , par convention on peut fermer une balise orpheline, soit , en l'ecrit <img> , ce qui est correct, soit pour une meilleure lecture on l'ecrit en la fermant comme ceci <img/>-->
+        
+        <!-- Les attributs sont les "parametres" de balises  -->
+
+        <balise attribut ="valeur/"></balise>
+        <!-- Organisation du texte-->
+        <!-- On organise le texte avec les Heaings-->
+        <!-- Dans notre cas nous avon un h1 donc un titre principal nous voulons donc un h2 -->
+
+        <h2>Coordonnées</h2>
+        <!-- On se sert d'un paragraphe pour donner une indication-->
+        <p>Je suis disponible de suite, contactez-moi !</p>
+        <!--J'utilise une balise adress car je vais rentrer mes coordonnées-->
+        <address>
+            <!-- On utilise la balise anchor <a></a> pour definir nos liens--> 
+            <!-- Dans ce cas precis , on va donner un lien vers notre courriel-->
+
+            <a href=" mailto:roypido@gmail.com">roypido@gmail.com</a>
+            <br>
+            <a href ="tel:0612380067"> 0612380067 </a>
+            
+        
+
+        </address>
+<!--DEBUT SECTION EXPO PRO-->
+        <section>
+            
+
+            <h2>Expérience professionnelles</h2>
+            <!-- on va utiliser la liste non ordonnées-->
+            <ul>
+                <!-- on y insère des puces-->
+                <li>1</li>
+                <!--on place un titre -->
+                 <h3>SUPER DIPLOPOME OBTENU CHEZ  Etudiant chez <span class="red">BROSSARD</span></h3>
+                 <!-- on peut mettre les valeurs avec des balsies simples-->
+                 <p> <i>Depuis <u>2022 Septembre</u> </i> pour <b> devenir developper</b> Web</p>
+
+                <li class="red">2</li>
+                <li>3</li>
+                <li>4</li>
+                
+            </ul>
+
+        </section>
+        <!-- FIN SECTION EXPO PRO-->
+
     
 </body>
 </html>
