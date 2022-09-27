@@ -5,10 +5,40 @@
     font-weight: bold;
 }
 
+a{
+    text-decoration: none;
+
+    color: rgb(161,14,167)
+}
+
+a:visited{
+    color:green;
+}
+
+a:hover{
+    background:orange;
+    color:black;
+    text-decoration: underline;
+}
+
+h1:hover{
+   color: black;
+}
+    
+
+
+.bgRED{
+
+    color:red;
+}
+
 .strong {
     font-weight: 400;
 
 }
 .red{
     color:red;
+}
+.text-center {
+    text-align: center
 }

@@ -16,63 +16,94 @@
 </head>
 <!--C'est le corps du document, la partie affichée dans le navigateur -->
 <body>
+
+    <header>
+         
+    </header>
+    <main>
+        
+
+   
     <!--Je peux écrire ce que je veux-->
     <!-- Les types de balises-->
     <!-- Les balises en paires, par exemple, <h1> qui correspond au titre principal de notre page-->
-        <h1> Julien CAKIR - Developper Web</h1>
-        <!-- Les balises orphelines, comme la balise <img> par exemple-->
-
-        <img src="assets/images/lion_picture_168819.jpg" 
-             alt="Photo de profil de Julien CAKIR" 
-             width="240px"
-             style="border-radius:50%">
-        <!-- Attention , par convention on peut fermer une balise orpheline, soit , en l'ecrit <img> , ce qui est correct, soit pour une meilleure lecture on l'ecrit en la fermant comme ceci <img/>-->
-        
-        <!-- Les attributs sont les "parametres" de balises  -->
-
-        <balise attribut ="valeur/"></balise>
-        <!-- Organisation du texte-->
-        <!-- On organise le texte avec les Heaings-->
-        <!-- Dans notre cas nous avon un h1 donc un titre principal nous voulons donc un h2 -->
-
-        <h2>Coordonnées</h2>
-        <!-- On se sert d'un paragraphe pour donner une indication-->
-        <p>Je suis disponible de suite, contactez-moi !</p>
-        <!--J'utilise une balise adress car je vais rentrer mes coordonnées-->
-        <address>
-            <!-- On utilise la balise anchor <a></a> pour definir nos liens--> 
-            <!-- Dans ce cas precis , on va donner un lien vers notre courriel-->
-
-            <a href=" mailto:roypido@gmail.com">roypido@gmail.com</a>
-            <br>
-            <a href ="tel:0612380067"> 0612380067 </a>
+            <h1> Julien CAKIR - Developper Web</h1>
+            <!-- Les balises orphelines, comme la balise <img> par exemple-->
+    
+            <img src="assets/images/lion_picture_168819.jpg" 
+                 alt="Photo de profil de Julien CAKIR" 
+                 width="240px"
+                 style="border-radius:50%">
+            <!-- Attention , par convention on peut fermer une balise orpheline, soit , en l'ecrit <img> , ce qui est correct, soit pour une meilleure lecture on l'ecrit en la fermant comme ceci <img/>-->
             
-        
-
-        </address>
-<!--DEBUT SECTION EXPO PRO-->
-        <section>
+            <!-- Les attributs sont les "parametres" de balises  -->
+    
+            <balise attribut ="valeur/"></balise>
+    
+            <a href="portfolio.html" >Découvrez mes réalisatioins</a>
+            <a href="contact/contact.html" >contactez-moi</a>
+            <p>Acces rapide</p>
             
-
-            <h2>Expérience professionnelles</h2>
-            <!-- on va utiliser la liste non ordonnées-->
-            <ul>
-                <!-- on y insère des puces-->
-                <li>1</li>
-                <!--on place un titre -->
-                 <h3>SUPER DIPLOPOME OBTENU CHEZ  Etudiant chez <span class="red">BROSSARD</span></h3>
-                 <!-- on peut mettre les valeurs avec des balsies simples-->
-                 <p> <i>Depuis <u>2022 Septembre</u> </i> pour <b> devenir developper</b> Web</p>
-
-                <li class="red">2</li>
-                <li>3</li>
-                <li>4</li>
+            <a href="#experiences" title="Acces direct aux experiences">Experience professionnelle</a> <br>
+            <a href="#experiences" title="Acces direct aux formations">Formations</a>
+    
+            <!-- Organisation du texte-->
+            <!-- On organise le texte avec les Headings-->
+            <!-- Dans notre cas nous avon un h1 donc un titre principal nous voulons donc un h2 -->
+    
+            <h2>Coordonnées</h2>
+            <!-- On se sert d'un paragraphe pour donner une indication-->
+            <p>Je suis disponible de suite, contactez-moi !</p>
+            <!--J'utilise une balise adress car je vais rentrer mes coordonnées-->
+            <address>
+                <!-- On utilise la balise anchor <a></a> pour definir nos liens--> 
+                <!-- Dans ce cas precis , on va donner un lien vers notre courriel-->
+    
+                <a href=" mailto:roypido@gmail.com">roypido@gmail.com</a>
+                <br>
+                <a href ="tel:0612380067"> 0612380067 </a>
                 
-            </ul>
+            
+    
+            </address>
+    <!--DEBUT SECTION EXPO PRO-->
+            <section>
+                
+    
+                <h2 class="text-center" id="experiences" > Expérience professionnelles </h2>
+            
+                <!-- on va utiliser la liste non ordonnées-->
+                <ul>
+                    <!-- on y insère des puces-->
+                    <li>1</li>
+                    <!--on place un titre -->
+                     <h3>SUPER DIPLOPOME OBTENU CHEZ  Etudiant chez <span class="red">BROSSARD</span></h3>
+                     <!-- on peut mettre les valeurs avec des balsies simples-->
+                     <p> <i>Depuis <u>2022 Septembre</u> </i> pour <b> devenir developper</b> Web</p>
+    
+                    <li class="red">2</li>
+                    <h3>SUPER DIPLOPOME OBTENU CHEZ  Etudiant chez <span class="red">BROSSARD</span></h3>
+                    <p> <i>Depuis <u>2022 Septembre</u> </i> pour <b> devenir developper</b> Web</p> 
+                    <li>3</li>
+                    <h3>SUPER DIPLOPOME OBTENU CHEZ  Etudiant chez <span class="red"><a href="http://www.wf3.fr/" target="_blank">BROSSARD</span></h3>
+                    <p> <i>Depuis <u>2022 Septembre</u> </i> pour <b> devenir developper</b> Web</p>
+                    <li>4</li>
+                    <p> <i>Depuis <u>2022 Septembre</u> </i> pour <b> devenir developper</b> Web</p>
+                    <h3>SUPER DIPLOPOME OBTENU CHEZ  Etudiant chez <span class="red">BROSSARD</span></h3>
+                    
+                </ul>
+    
+            </section>
+            <!-- FIN SECTION EXPO PRO-->
+            <a href="index.html" >retour à l'accueil</a>
+    
+        
+    </main>
 
-        </section>
-        <!-- FIN SECTION EXPO PRO-->
+    <footer>
 
+    </footer>
     
 </body>
+
 </html>
