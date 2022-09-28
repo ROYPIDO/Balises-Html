@@ -11,6 +11,7 @@
     <meta name="description" content="Nous decouvrons ici les premières balises">
     <!--On va lier notre fichier CSS de styles a notre page HTML-->
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
     <title>Les balises HTML</title>
 </head>
@@ -42,10 +43,16 @@
     
             <a href="portfolio.html" >Découvrez mes réalisatioins</a>
             <a href="contact/contact.html" >contactez-moi</a>
+            
+            <i class="fa-brands fa-facebook"></i>  
+            <span>facebook</span>          
             <p>Acces rapide</p>
             
             <a href="#experiences" title="Acces direct aux experiences">Experience professionnelle</a> <br>
-            <a href="#experiences" title="Acces direct aux formations">Formations</a>
+            <a href="#formations" title="Acces direct aux formations">Formations</a>
+            <a href ="https://www.facebook.com" 
+               target="_blank"
+               aria-label=" dEVENEZ FUN SUR fACEBOOK!"></a>
     
             <!-- Organisation du texte-->
             <!-- On organise le texte avec les Headings-->
@@ -67,10 +74,38 @@
     
             </address>
     <!--DEBUT SECTION EXPO PRO-->
-            <section>
+            <section aria-labelledby="experiences">
                 
     
                 <h2 class="text-center" id="experiences" > Expérience professionnelles </h2>
+            
+                <!-- on va utiliser la liste non ordonnées-->
+                <ul>
+                    <!-- on y insère des puces-->
+                    <li>1</li>
+                    <!--on place un titre -->
+                     <h3>SUPER DIPLOPOME OBTENU CHEZ  Etudiant chez <span class="red">BROSSARD</span></h3>
+                     <!-- on peut mettre les valeurs avec des balsies simples-->
+                     <p> <i>Depuis <u>2022 Septembre</u> </i> pour <b> devenir developper</b> Web</p>
+    
+                    <li class="red">2</li>
+                    <h3>SUPER DIPLOPOME OBTENU CHEZ  Etudiant chez <span class="red">BROSSARD</span></h3>
+                    <p> <i>Depuis <u>2022 Septembre</u> </i> pour <b> devenir developper</b> Web</p> 
+                    <li>3</li>
+                    <h3>SUPER DIPLOPOME OBTENU CHEZ  Etudiant chez <span class="red"><a href="http://www.wf3.fr/" target="_blank">BROSSARD</span></h3>
+                    <p> <i>Depuis <u>2022 Septembre</u> </i> pour <b> devenir developper</b> Web</p>
+                    <li>4</li>
+                    <p> <i>Depuis <u>2022 Septembre</u> </i> pour <b> devenir developper</b> Web</p>
+                    <h3>SUPER DIPLOPOME OBTENU CHEZ  Etudiant chez <span class="red">BROSSARD</span></h3>
+                    
+                </ul>
+    
+            </section>
+
+            <section aria-labelledby="formations">
+                
+    
+                <h2 class="text-center" id="formations" > Formations </h2>
             
                 <!-- on va utiliser la liste non ordonnées-->
                 <ul>

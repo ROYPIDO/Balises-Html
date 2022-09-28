@@ -18,3 +18,8 @@ h2, span {
 p strong {
     color:black;
 }
+
+p strong i{
+
+    color:violet;
+}
