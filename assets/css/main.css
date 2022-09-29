@@ -1,8 +1,12 @@
-/* mes styles*/
-
-
 .bold{
     font-weight: bold;
+}
+
+li.menu{
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 a{
@@ -37,7 +41,7 @@ h1:hover{
 
 }
 .red{
-    color:red;
+    color:rgb(0, 153, 255);
 }
 .text-center {
     text-align: center

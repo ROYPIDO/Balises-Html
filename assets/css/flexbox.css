@@ -88,4 +88,5 @@ align-items: stretch;
 .container{
     padding: 5px;
     background: yellow; 
+    height: 600px;
 }

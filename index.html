@@ -1,43 +1,40 @@
-<!-- la balise permet de signaler au navigateur que c'es un document HTML -->
 <!DOCTYPE html>
-    <!--langue+ ouverture de notre de notre document-->
 <html lang="fr">
-    <!-- La balise head est l'en-tête de notre document-->
 <head>
-    <!-- Les balises meta-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Nous decouvrons ici les premières balises">
-    <!--On va lier notre fichier CSS de styles a notre page HTML-->
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
     <title>Les balises HTML</title>
 </head>
-<!--C'est le corps du document, la partie affichée dans le navigateur -->
 <body>
 
     <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="CV">CV</a></li>
+                <li><a href="Contact">Contact</a></li>
+                <li><a href="Experience">Experiences</a></li>
+
+            </ul>
+            
+        </nav>
+        <div></div>
          
     </header>
     <main>
         
 
-   
-    <!--Je peux écrire ce que je veux-->
-    <!-- Les types de balises-->
-    <!-- Les balises en paires, par exemple, <h1> qui correspond au titre principal de notre page-->
+
             <h1> Julien CAKIR - Developper Web</h1>
-            <!-- Les balises orphelines, comme la balise <img> par exemple-->
     
             <img src="assets/images/lion_picture_168819.jpg" 
                  alt="Photo de profil de Julien CAKIR" 
-                 width="240px"
-                 style="border-radius:50%">
-            <!-- Attention , par convention on peut fermer une balise orpheline, soit , en l'ecrit <img> , ce qui est correct, soit pour une meilleure lecture on l'ecrit en la fermant comme ceci <img/>-->
-            
-            <!-- Les attributs sont les "parametres" de balises  -->
+                 width="300px"
+                 style="border-radius:40%">
     
             <balise attribut ="valeur/"></balise>
     
@@ -52,20 +49,11 @@
             <a href="#formations" title="Acces direct aux formations">Formations</a>
             <a href ="https://www.facebook.com" 
                target="_blank"
-               aria-label=" dEVENEZ FUN SUR fACEBOOK!"></a>
-    
-            <!-- Organisation du texte-->
-            <!-- On organise le texte avec les Headings-->
-            <!-- Dans notre cas nous avon un h1 donc un titre principal nous voulons donc un h2 -->
+               aria-label=" DEVENEZ FUN SUR fACEBOOK!"></a>
     
             <h2>Coordonnées</h2>
-            <!-- On se sert d'un paragraphe pour donner une indication-->
             <p>Je suis disponible de suite, contactez-moi !</p>
-            <!--J'utilise une balise adress car je vais rentrer mes coordonnées-->
             <address>
-                <!-- On utilise la balise anchor <a></a> pour definir nos liens--> 
-                <!-- Dans ce cas precis , on va donner un lien vers notre courriel-->
-    
                 <a href=" mailto:roypido@gmail.com">roypido@gmail.com</a>
                 <br>
                 <a href ="tel:0612380067"> 0612380067 </a>
@@ -73,26 +61,21 @@
             
     
             </address>
-    <!--DEBUT SECTION EXPO PRO-->
             <section aria-labelledby="experiences">
                 
     
                 <h2 class="text-center" id="experiences" > Expérience professionnelles </h2>
             
-                <!-- on va utiliser la liste non ordonnées-->
                 <ul>
-                    <!-- on y insère des puces-->
                     <li>1</li>
-                    <!--on place un titre -->
-                     <h3>SUPER DIPLOPOME OBTENU CHEZ  Etudiant chez <span class="red">BROSSARD</span></h3>
-                     <!-- on peut mettre les valeurs avec des balsies simples-->
-                     <p> <i>Depuis <u>2022 Septembre</u> </i> pour <b> devenir developper</b> Web</p>
+                     <h3> Receptionniste chez <span class="red">HOTEL HOLIDAY LYON EST</span></h3>
+                     <p> <i>Entre <u>2017 et 2019</u> </i> <b> en tant que chef de l'accueil</b></p>
     
                     <li class="red">2</li>
-                    <h3>SUPER DIPLOPOME OBTENU CHEZ  Etudiant chez <span class="red">BROSSARD</span></h3>
+                    <h3>DIPLOPOME Bac+4 OBTENU CHEZ Université EGE Etudiant chez <span class="red">BROSSARD</span></h3>
                     <p> <i>Depuis <u>2022 Septembre</u> </i> pour <b> devenir developper</b> Web</p> 
                     <li>3</li>
-                    <h3>SUPER DIPLOPOME OBTENU CHEZ  Etudiant chez <span class="red"><a href="http://www.wf3.fr/" target="_blank">BROSSARD</span></h3>
+                    <h3>DIPLOPOME OBTENU CHEZ  Etudiant chez <span class="red"><a href="http://www.wf3.fr/" target="_blank">BROSSARD</span></h3>
                     <p> <i>Depuis <u>2022 Septembre</u> </i> pour <b> devenir developper</b> Web</p>
                     <li>4</li>
                     <p> <i>Depuis <u>2022 Septembre</u> </i> pour <b> devenir developper</b> Web</p>
@@ -107,20 +90,16 @@
     
                 <h2 class="text-center" id="formations" > Formations </h2>
             
-                <!-- on va utiliser la liste non ordonnées-->
                 <ul>
-                    <!-- on y insère des puces-->
                     <li>1</li>
-                    <!--on place un titre -->
-                     <h3>SUPER DIPLOPOME OBTENU CHEZ  Etudiant chez <span class="red">BROSSARD</span></h3>
-                     <!-- on peut mettre les valeurs avec des balsies simples-->
-                     <p> <i>Depuis <u>2022 Septembre</u> </i> pour <b> devenir developper</b> Web</p>
+                     <h3>Niveau Master 2 Recherche Politique Social et Société <span class="red"> Univérsité SORBONNE - Paris 1</span></h3>
+                     <p> <i>de <u>2008 </u> à <u>2009 </u> </i> pour <b> devenir developper</b> Web</p>
     
                     <li class="red">2</li>
-                    <h3>SUPER DIPLOPOME OBTENU CHEZ  Etudiant chez <span class="red">BROSSARD</span></h3>
-                    <p> <i>Depuis <u>2022 Septembre</u> </i> pour <b> devenir developper</b> Web</p> 
+                    <h3>Niveau Master 2 Recherche Ethique Médical <span class="red">Univérsité DESCARTES - Paris 5</span></h3>
+                    <p> <i>de <u>2006 </u> à <u>2008 </u> pour <b> devenir developper</b> Web</p> 
                     <li>3</li>
-                    <h3>SUPER DIPLOPOME OBTENU CHEZ  Etudiant chez <span class="red"><a href="http://www.wf3.fr/" target="_blank">BROSSARD</span></h3>
+                    <h3>UFR Lettres Langues et Sciences Humaine <span class="red">Univérsité d'Orléans<a href="http://www.wf3.fr/" target="_blank"></span></h3>
                     <p> <i>Depuis <u>2022 Septembre</u> </i> pour <b> devenir developper</b> Web</p>
                     <li>4</li>
                     <p> <i>Depuis <u>2022 Septembre</u> </i> pour <b> devenir developper</b> Web</p>
@@ -129,13 +108,13 @@
                 </ul>
     
             </section>
-            <!-- FIN SECTION EXPO PRO-->
             <a href="index.html" >retour à l'accueil</a>
     
         
     </main>
 
     <footer>
+        @jmcakir
 
     </footer>
     

@@ -1,0 +1,133 @@
+.container{
+background-color: cadetblue;
+padding:20px 0 ;
+}
+.btn{
+
+    background:rgb(255,97,23);
+    color:blue;
+    font-size: 3vw;
+    cursor: pointer;
+    padding: 1em;
+    width: 500px;
+    margin: 50px auto;
+    border-radius:20px;
+    transform: scale(1);
+    transition: 1s;
+
+}
+
+.btn:hover{
+    transform: scale(1.25);
+    background: black;
+}
+
+form{
+    width:500px;
+    margin: auto;
+}
+
+form input{
+
+    border:2px solid #fff;
+    border-radius: 100em;
+    color: darkblue;
+    font-size: 1.5em;
+    outline: none;
+    padding: 1em;
+    width: 100%;
+
+}
+
+form input:focus{
+    border:2px solid #336335;
+
+}
+
+form input:invalid{
+    border:2px solid red;
+    background : red;
+    color:white;
+}
+
+form input:not(:focus):invalid {
+
+    border:2px solid red;
+    background : red;
+    color: white;
+}
+
+.balle {
+
+    width: 200px;
+    height: 200px;
+    background: chartreuse;
+    border-radius: 50%;
+    margin: auto;
+    transition: 400ms ease-in-out;
+}
+
+.btn2{
+
+    background:rgb(255,97,23);
+    color: black;
+    font-size: 3vw;
+    cursor: pointer;
+    padding: 1em;
+    width: 500px;
+    margin: 50px auto;
+    border-radius:20px;
+    transform: scale(0.5);
+    transition: 1s;
+}
+
+.btn2:hover + .balle{
+
+    transform: scale(1.25);
+    transition: 400ms;
+    background: violet;
+}
+
+.btn3{
+
+    background:rgb(255,97,23);
+    color: black;
+    font-size: 3vw;
+    cursor: pointer;
+    padding: 1em;
+    width: 500px;
+    margin: 50px auto;
+    border-radius:20px;
+    transform: scale(0.5);
+    transition: 1s;
+}
+
+.progres{
+    width: 500px;
+    height: 30px;
+    border:1px solid black;
+    margin:auto;
+    padding: 2px;
+
+}
+
+.column-reverse{
+
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.barre-progres{
+
+    background: chartreuse;
+    height: 30px;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition: 1000ms cubic-bezier(.72,.13,.5,.77);
+}
+
+.btn3:active + .progres > .barre-progres{
+
+    transform: scaleX(1);
+    transition: 2000ms;
+}
